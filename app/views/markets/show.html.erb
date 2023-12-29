@@ -1,0 +1,9 @@
+<h3><%= "#{@market[:attributes][:name]} Show Page"%></h3>
+<p><%= @market[:attributes][:street] %></p>
+<p><%= @market[:attributes][:city] %> 
+<%= @market[:attributes][:state] %>
+<%= @market[:attributes][:zip]%></p>
+
+<% @vendors.each do |vendor| %>
+<%= vendor[:attributes][:name] %>
+<% end %>

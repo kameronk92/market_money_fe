@@ -1,0 +1,7 @@
+<h2>Markets Index</h2>
+<% @markets.each do |market| %>
+  <h4><%= market[:attributes][:name] %></h4>
+  <p><%= market[:attributes][:city] %></p>
+  <p><%= market[:attributes][:state] %></p>
+  <%= link_to 'Learn More', "markets/#{market[:id]}" %>
+<% end %>
