@@ -5,5 +5,6 @@
 <%= @market[:attributes][:zip]%></p>
 
 <% @vendors.each do |vendor| %>
-<%= vendor[:attributes][:name] %>
+<p><%= vendor[:attributes][:name] %></p>
+<%= link_to 'Learn More', "vendors/#{vendor[:id]}" %>
 <% end %>
